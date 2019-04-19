@@ -42,7 +42,11 @@ class App extends Component {
     
     const features = Object.keys(this.props.features).map(key => {
 
+
+console.log(key);
+
         return <Features part={key} onUpdate={this.updateFeature} choices={this.props.features[key]} selected={this.state.selected[key]} />
+        
     
     })
 

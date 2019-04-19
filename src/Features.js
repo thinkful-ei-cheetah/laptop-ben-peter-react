@@ -7,7 +7,7 @@ export default function Features(props){
         const selectedClass = item.name === props.selected.name ? 'feature__selected' : '';
         const featureClass = 'feature__option ' + selectedClass;
 
-        return <Options handleUpdate={props.onUpdate} choices={props.choices} featureClass={featureClass} selected={props.selected} item={item} />
+        return <Options handleUpdate={props.onUpdate} choices={props.choices} featureClass={featureClass} selected={props.selected} item={item} part={props.part} />
     })
     
     
