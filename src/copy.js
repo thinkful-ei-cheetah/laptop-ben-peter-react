@@ -5,7 +5,10 @@ import './App.css';
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {
+    
+  }
+
+  this.state = {
       selected: {
         Processor: {
             name: '17th Generation Intel Core HB (7 Core with donut spare)',
@@ -25,10 +28,9 @@ class App extends Component {
           }
       }
     }
-  }
 
   updateFeature(feature, newValue) {
-    const selected = Object.assign({}, this.state.selected);
+    const selected = Object.assign({}, this.state);
     selected[feature] = newValue;
     this.setState({
       selected
